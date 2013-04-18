@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Embedded Exalead Search</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<link href="css/search.css" rel="stylesheet" media="screen"/>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="#">Embeddable Exalead Search</a>
+				<form class="navbar-form form-search pull-right" onsubmit="return false;">
+					<input id="term" type="text" class="input-medium search-query" placeholder="Type here ...">
+					<button id="search" type="button" class="btn">Search</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span8 pagination pagination-left pagination-small" id="pagination"></div>
+			<div class="span3 tools" id="tools">
+			</div>
+			<div class="span1 pagination pagination-right pagination-small" id="nbHits"></div>
+		</div>
+		<div class="row-fluid">
+			<div class="span8" id="results"></div>
+			<div class="span4">
+				<div class="well" id="facets"></div>
+				<div id="messages"></div>
+			</div>
+		</div>
+		<hr/>
+		<footer>
+	        <p>&copy; OECD 2013</p>
+	    </footer>
+	</div>
+	<!--Deps-->
+	<script type="text/javascript" src="js/lib/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/mustache.min.js"></script>
+	<script type="text/javascript" src="js/lib/moment.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.history.js"></script>
+	<!--Search-->
+	<script type="text/javascript" src="js/search-namespace.js"></script>
+	<script type="text/javascript" src="js/search-ui-templates.js"></script>
+	<script type="text/javascript" src="js/search-default-config.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<!--Customization-->
+	<script type="text/javascript" src="js/search-config.js"></script>
+	
+</body>
+</html>
